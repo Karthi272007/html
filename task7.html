@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login page</title>
+
+        <style>
+            fieldset
+            {
+                width: 200px;
+                padding:20px;
+                margin:20px auto;
+            }
+            .row
+            {
+                display: flex;
+                justify-content: center;
+            }
+            #fsgender
+            {
+                display: flex;
+            }
+            #fscontact
+            {
+                display: flex;
+                flex-direction: column;
+                vertical-align: 36px;
+                gap: 36px;
+
+            }
+            .others div
+            {
+                margin-bottom: 20px;
+                border: 1px solid black;
+            }
+            .others div label
+            {
+                width: 80px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend style="text-align: center;">Login Panel</legend>
+            <div class="row">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username"/>
+            </div>
+            <br/>
+            <div class="row">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password"/>
+            </div>
+            <br/>
+            <div>
+                <input type="button" value="Login"/>
+                <input type="submit" value="Sign-In"/>
+            </div>
+        </fieldset>
+
+        <fieldset id="fsgender">
+            <legend>Gender</legend>
+            <div>
+                <input type="radio" name="gender"/>
+                <label>male</label>
+            </div>
+            <div>
+                <input type="radio" name="gender"/>
+                <label>female</label>
+            </div>
+        </fieldset>
+
+        <fieldset id="fscontact">
+            <legend>Contact</legend>
+            <div class="row">
+                <label>Email</label>
+                <input type="email" required/>
+            </div>
+        </fieldset>
+
+        <fieldset id="fsothers">
+            <legend>Age</legend>
+            <div class="others">
+                <div>
+                    <label>Age</label>
+                    <input type="number" max="60" min="18">
+                </div>
+                <div>
+                    <label> D.O.B</label>
+                    <input type="date"/>
+                </div>
+                <div>
+                    <label>Time</label>
+                    <input type="time"/>
+                </div>
+                <div>
+                    <label>Date & Time</label>
+                    <input type="datetime-local"/>
+                </div>
+                <div>
+                    <label>Month</label>
+                    <input type="month"/>
+                </div>
+                <div>
+                    <label>Week</label>
+                    <input type="Week"/>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Color</legend>
+            <div class="Product-Details">
+                <div>
+                    <label>Color</label>
+                    <input type="color"/>
+                </div>
+                <div>
+                    <label>Price Range</label>
+                    <input type="range">                
+                </div>
+                <div style="display: flex;">
+                    <ul style="list-style: none;">
+                        <li>
+                            <label>Shoe</label>
+                            <input type="checkbox">
+                        </li>
+                        <li>
+                            <label>Socks</label>
+                            <input type="checkbox">
+                        </li>
+                        <li>
+                            <label>Belt</label>
+                            <input type="checkbox"/>
+                        </li>
+                    </ul>
+                </div>
+                <br/>
+                <div>
+                    <label>Upload File</label>
+                    <input type="file">     
+                </div>
+                <br/>
+                <div>
+                    <label for="country">Select Country:</Select></label>
+                    <select id="country" name="country">
+                        <option value="US">United States</option-value>
+                        <option value="IND">India</option-value>
+                        <option value="GEM">Germany</option-value>
+                    </select>
+                </div>
+                <div>
+                    <label></label>
+                    <input type="hidden" id="hello world"/> 
+                </div>
+            </div>
+        </fieldset>
+    </body>
+</html>
