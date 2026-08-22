@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #responsive-box
+        {
+            width: 80%;
+            max-width: 600px;
+            background-color: blanchedalmond;
+            margin: 25px;
+            padding: auto;
+        }
+
+        p
+        {
+            font-size: 1.5rem;
+        }
+
+        #responsive-heading
+        {
+            font-size: 5vw;
+            color: #155;
+        }
+
+        @media(max-width: 768px)
+        {
+            body
+            {
+                background-color: darkgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="responsive-box">
+        <p>This is a normal paragraph.</p>
+        <h1 id="responsive-heading">welcome</h1>
+    </div>
+</body>
+</html>
